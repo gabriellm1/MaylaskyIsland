@@ -5,9 +5,9 @@ using UnityEngine;
 public class Map : MonoBehaviour
 {
 
-    public int total_upgradeBalls = 5;
+    int total_upgradeBalls = 10;
 
-    public int total_zombies = 20;
+    int total_zombies = 39;
 
     public GameObject upgradeBalls;
 

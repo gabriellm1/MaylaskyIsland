@@ -156,7 +156,7 @@ class VisualEffect;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; 
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; template <> void RegisterUnityClass<CharacterController>(const char*);
 class MeshCollider; 
@@ -217,7 +217,7 @@ class Motion; template <> void RegisterUnityClass<Motion>(const char*);
 class AnimationClip; template <> void RegisterUnityClass<AnimationClip>(const char*);
 class NavMeshData; template <> void RegisterUnityClass<NavMeshData>(const char*);
 class OcclusionCullingData; 
-class PhysicMaterial; 
+class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
 class RuntimeAnimatorController; template <> void RegisterUnityClass<RuntimeAnimatorController>(const char*);
@@ -283,7 +283,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 103 non stripped classes
+	//Total: 105 non stripped classes
 	//0. Behaviour
 	RegisterUnityClass<Behaviour>("Core");
 	//1. Unity::Component
@@ -462,33 +462,37 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<Avatar>("Animation");
 	//88. SpeedTreeWindAsset
 	RegisterUnityClass<SpeedTreeWindAsset>("Terrain");
-	//89. LightProbes
+	//89. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//90. LightProbes
 	RegisterUnityClass<LightProbes>("Core");
-	//90. LightmapSettings
+	//91. LightmapSettings
 	RegisterUnityClass<LightmapSettings>("Core");
-	//91. BillboardAsset
+	//92. BillboardAsset
 	RegisterUnityClass<BillboardAsset>("Core");
-	//92. BillboardRenderer
+	//93. BillboardRenderer
 	RegisterUnityClass<BillboardRenderer>("Core");
-	//93. LODGroup
+	//94. LODGroup
 	RegisterUnityClass<LODGroup>("Core");
-	//94. Tree
+	//95. Tree
 	RegisterUnityClass<Tree>("Terrain");
-	//95. CGProgram
+	//96. CGProgram
 	RegisterUnityClass<CGProgram>("Core");
-	//96. Motion
+	//97. PhysicMaterial
+	RegisterUnityClass<PhysicMaterial>("Physics");
+	//98. Motion
 	RegisterUnityClass<Motion>("Animation");
-	//97. AnimationClip
+	//99. AnimationClip
 	RegisterUnityClass<AnimationClip>("Animation");
-	//98. AnimatorController
+	//100. AnimatorController
 	RegisterUnityClass<AnimatorController>("Animation");
-	//99. TerrainLayer
+	//101. TerrainLayer
 	RegisterUnityClass<TerrainLayer>("Terrain");
-	//100. NavMeshData
+	//102. NavMeshData
 	RegisterUnityClass<NavMeshData>("AI");
-	//101. TerrainCollider
+	//103. TerrainCollider
 	RegisterUnityClass<TerrainCollider>("TerrainPhysics");
-	//102. NavMeshSettings
+	//104. NavMeshSettings
 	RegisterUnityClass<NavMeshSettings>("AI");
 
 }

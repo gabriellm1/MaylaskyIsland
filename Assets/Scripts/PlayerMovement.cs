@@ -13,15 +13,16 @@ public class PlayerMovement : MonoBehaviour
 
     public bool died = false;
 
-    public int life = 2;
+    public int life;
 
-    public int kills = 0;
+    public int kills;
 
     public Text kill_counter;
 
     public Text win;
 
     public Text loose;
+    public Text life_counter;
 
     public float moveSpeed = 3; //criar um game controller para alterar com juggernog
     private float turnSpeed = 150f;
@@ -33,10 +34,12 @@ public class PlayerMovement : MonoBehaviour
 
     bool played = false;
 
-    private void Awake()
+    private void Start()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        kills = 0;
+        life  = 3;
     }
 
 
@@ -44,33 +47,30 @@ public class PlayerMovement : MonoBehaviour
     {
 
         yield return new WaitForSeconds(5.0f);
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(0);
 
     }
 
 
-    // Update is called once per frame
+    //Update is called once per frame
     private void Update()
     {
+        kill_counter.text = "KILLS " + (kills).ToString() + "/40";
+        life_counter.text = "LIFE x " + life.ToString();
 
-        kill_counter.text = "KILLS " + kills + "/40";
-        //GetComponent<Text>.text = ("KILLS" + kills + "/40");
-        var horizontal = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
-
-        var movement = new Vector3(horizontal, 0, vertical);
 
         animator.SetFloat("Speed", vertical);
         animator.SetBool("Death", died);
 
-        if (life<=0 && !played)
+        if (life <= 0 && !played)
         {
             died = true;
             audio.PlayOneShot(morte);
             played = true;
-            
-            
+
+
         }
 
         if (played)

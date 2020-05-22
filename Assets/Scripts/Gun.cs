@@ -47,9 +47,7 @@ public class Gun : MonoBehaviour
             if (hitted.transform.tag == "Zombie")
             {
                 hitted.transform.GetComponent<ZombieAI>().life -= 1;
-                player.GetComponent<PlayerMovement>().kills += 1;
             }
-            //Destroy(hitted.collider.gameObject);
         }
     }
 

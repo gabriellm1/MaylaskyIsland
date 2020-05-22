@@ -16,10 +16,13 @@ public class ZombieAI : MonoBehaviour
 
     public AudioSource audio;
     public AudioClip morte;
+    public AudioClip damage;
 
     public bool dead = false;
 
     public Animator animator;
+
+    public GameObject player;
 
 
     void OnCollisionEnter(Collision collision)
@@ -27,7 +30,9 @@ public class ZombieAI : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerMovement>().life -= 1;
+            if (collision.gameObject.GetComponent<PlayerMovement>().life>0)
+                collision.gameObject.GetComponent<PlayerMovement>().life -= 1;
+            audio.PlayOneShot(damage);
         }
 
 
@@ -35,6 +40,7 @@ public class ZombieAI : MonoBehaviour
 
     IEnumerator death()
     {
+        player.GetComponent<PlayerMovement>().kills += 1;
         audio.PlayOneShot(morte);
         dead = true;
         yield return new WaitForSeconds(1.0f);

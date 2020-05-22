@@ -121,9 +121,6 @@
     <Compile Include="Assets\SineVFX\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\SineVFX\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\SineVFX\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\2DTools\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\2DTools\Scripts\CircleMoverSample.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\Example Data\Scripts\PlayerHoverController.cs" />
@@ -197,6 +194,12 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
@@ -205,12 +208,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

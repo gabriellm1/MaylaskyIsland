@@ -1,34 +1,50 @@
 ﻿<Properties StartupConfiguration="{50C930EE-34D9-3E34-85AD-245C27686BCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tom's Terrain Tools/Editor/IncrementalSplatmapping.cs">
     <Files>
       <File FileName="Assets/Scripts/Map.cs" Line="36" Column="64" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" />
-      <File FileName="Assets/Scripts/ZombieAI.cs" />
-      <File FileName="Assets/Tom's Terrain Tools/Editor/IncrementalSplatmapping.cs" />
-      <File FileName="Assets/Supercyan Character Pack Zombie Sample/Scripts/ZombieCharacterControl.cs" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="27" Column="10" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="58" Column="9" />
+      <File FileName="Assets/Scripts/ZombieAI.cs" Line="17" Column="1" />
+      <File FileName="Assets/SineVFX/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" Line="11" Column="93" />
+      <File FileName="Assets/Scripts/usingAction.cs" Line="1" Column="1" />
+      <File FileName="Assets/Tom's Terrain Tools/Editor/IncrementalSplatmapping.cs" Line="296" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CarnivalShooter" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Gun.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
               <Node name="SineVFX" expanded="True">
                 <Node name="PostProcessing" expanded="True">
                   <Node name="Editor" expanded="True">
                     <Node name="PropertyDrawers" expanded="True" />
                     <Node name="Utils" expanded="True" />
                   </Node>
+                  <Node name="Runtime" expanded="True">
+                    <Node name="Attributes" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="TranslucentCrystals" expanded="True">
+                  <Node name="Resources" expanded="True">
+                    <Node name="Shaders" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Standard Assets" expanded="True">
+                <Node name="CrossPlatformInput" expanded="True">
+                  <Node name="Scripts" expanded="True" />
                 </Node>
               </Node>
               <Node name="Supercyan Character Pack Zombie Sample" expanded="True">
-                <Node name="Scripts" expanded="True" />
+                <Node name="Prefabs" expanded="True">
+                  <Node name="Base" expanded="True" />
+                </Node>
               </Node>
               <Node name="Tom's Terrain Tools" expanded="True">
-                <Node name="Editor" expanded="True" />
+                <Node name="Editor" expanded="True">
+                  <Node name="IncrementalSplatmapping.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="UpgradeBall" expanded="True" />
             </Node>
@@ -41,7 +57,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57f3285f-369c-49a5-98fe-7ffee9591012" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/gmonteiro42/Documents/Insper/jogosdigitais/CarnivalShooter/Assets/Scripts/PlayerMovement.cs" relfile="Assets/Scripts/PlayerMovement.cs" line="68" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

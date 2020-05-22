@@ -102,7 +102,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4236355771833020220}
   - component: {fileID: 4264368234517671176}
-  - component: {fileID: 4234541068249280881}
   m_Layer: 0
   m_Name: zombie_zombie4
   m_TagString: Untagged
@@ -201,25 +200,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.22611654, y: 0.003887251, z: 0}
     m_Extent: {x: 0.5238398, y: 0.20348991, z: 0.30575648}
   m_DirtyAABB: 0
---- !u!95 &4234541068249280881
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4233558285666513938}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: bb141fc9a700c9c4ca7e6dadb8acf24b, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4233602122985659022
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,8 +394,10 @@ MonoBehaviour:
   life: 1
   audio: {fileID: 4963276299747934931}
   morte: {fileID: 8300000, guid: 3b14598ade2c64175a4fd54347ebe5e9, type: 3}
+  damage: {fileID: 8300000, guid: 458afe5788bab46e6804837100c34b27, type: 3}
   dead: 0
   animator: {fileID: 4293889496564232666}
+  player: {fileID: 8650013681525847621, guid: a35bc4416f5794a149da18c6b8dd386d, type: 3}
 --- !u!82 &4963276299747934931
 AudioSource:
   m_ObjectHideFlags: 0
