@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{50C930EE-34D9-3E34-85AD-245C27686BCD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Map.cs" Line="36" Column="64" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/ZombieAI.cs" />
+      <File FileName="Assets/Tom's Terrain Tools/Editor/IncrementalSplatmapping.cs" />
+      <File FileName="Assets/Supercyan Character Pack Zombie Sample/Scripts/ZombieCharacterControl.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarnivalShooter" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Gun.cs" selected="True" />
+              </Node>
+              <Node name="SineVFX" expanded="True">
+                <Node name="PostProcessing" expanded="True">
+                  <Node name="Editor" expanded="True">
+                    <Node name="PropertyDrawers" expanded="True" />
+                    <Node name="Utils" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Supercyan Character Pack Zombie Sample" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="Tom's Terrain Tools" expanded="True">
+                <Node name="Editor" expanded="True" />
+              </Node>
+              <Node name="UpgradeBall" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57f3285f-369c-49a5-98fe-7ffee9591012" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
